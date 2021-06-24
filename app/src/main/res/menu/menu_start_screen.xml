@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".StartScreen">
+    <item android:id="@+id/action_settings" android:title="@string/send_feedback"
+        android:orderInCategory="100" android:showAsAction="never"
+        android:onClick="sendFeedbackScreen"/>
+    <item android:id="@+id/invite_friend" android:title="@string/invite_friend"
+        android:orderInCategory="100" android:showAsAction="never"
+        android:onClick="inviteFriend"/>
+    <item android:id="@+id/clear_progress" android:title="@string/clear_progress"
+        android:orderInCategory="100" android:showAsAction="never"
+        android:onClick="clearProgress"/>
+
+
+
+</menu>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.13">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/question"
+            android:id="@+id/question"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_weight="0.13"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin" />
+
+        <RadioGroup
+            android:layout_width="271dp"
+            android:layout_height="113dp"
+            android:orientation="vertical"
+            android:id="@+id/radiogroup"
+            android:baselineAligned="false"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="0.24">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/option_a"
+                android:id="@+id/option_a"
+                android:checked="false"
+                android:layout_weight="0.09" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/option_b"
+                android:id="@+id/option_b"
+                android:checked="false"
+                android:layout_weight="0.09" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/option_c"
+                android:id="@+id/option_c"
+                android:checked="false"
+                android:layout_weight="0.09" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/option_d"
+                android:id="@+id/option_d"
+                android:checked="false"
+                android:layout_weight="0.09" />
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check Answer"
+            android:id="@+id/button3" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skip Answer"
+            android:id="@+id/button4" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Give Up for Today"
+            android:id="@+id/button5"
+            android:onClick="backToStartScreen"/>
+    </TableLayout>
+
+</LinearLayout>
+
+
